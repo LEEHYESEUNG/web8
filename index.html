@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--반응형 웹을 위한-->
+
+	<title>designworks study</title>
+  <link rel="icon" href="https://static1.gensler.com/apple-touch-icon-e94b23e.png">
+  <script src="./js/jquery-2.1.4.js"></script> <!-- jquery open source -->
+  <!-- page scroll effects js&css-->
+  <script src="./js/velocity/velocity.min.js"></script>
+  <script src="./js/velocity/velocity.ui.min.js"></script>
+  <script src="./js/velocity/main.js"></script>
+  <link rel="stylesheet" href="./js/velocity/velocity.css">
+  <!-- smooth scrolling -->
+  <script src="./js/jquery.scrollTo.min.js"></script>
+  <!-- slick js&css -->
+  <script src="./js/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="./js/slick/slick-theme.css">
+  <link rel="stylesheet" href="./js/slick/slick.css">
+  <!-- featherlight js&css -->
+  <script src="./js/featherlight/featherlight.js"></script>
+  <link rel="stylesheet" href="./js/featherlight/featherlight.css">
+  <!-- custom js&css -->
+  <script src="./js/custom.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+<body data-hijacking="on" data-animation="rotate">
+  <div class="intro-bg">
+    <div class="intro-text">Gensler</div>
+  </div>
+  <header>
+    <div class="gnb-inner">
+        <h1 class="logo"><a href="" class="logo"></h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="114.1" height="24.17" viewBox="0 0 114.1 24.17">
+            <title>Gensler</title>
+            <g fill="#EE3224">
+              <path d="M84.28,15.19c0-5.44,3.59-8.78,8.27-8.78,5.15,0,8.56,4,7.94,10.43H89.83a3.68,3.68,0,0,0,4.08,3.65,8.12,8.12,0,0,0,4.16-1.32l1.71,3.39a13.92,13.92,0,0,1-6.68,1.56C87.54,24.11,84.28,20.61,84.28,15.19Zm11.25-1.7c0-1.94-1-3.45-2.84-3.45s-2.83,1.61-2.83,3.45Z"></path>
+              <path d="M52.94,23.59V13.06a2,2,0,0,0-2.25-2.23,4.05,4.05,0,0,0-2.42,1.23V23.59H42.79V6.92h5.32V9A5.75,5.75,0,0,1,52.57,6.4a5.57,5.57,0,0,1,5.84,5.87V23.59Z"></path>
+              <rect x="76.95" y="0.13" width="5.47" height="23.46"></rect>
+              <path d="M113.3,11.25a8.07,8.07,0,0,0-2-.31,4.32,4.32,0,0,0-3.35,1.67v11h-5.47V6.92h5.32V9.09a5.16,5.16,0,0,1,4.75-2.61,6.62,6.62,0,0,1,1.54.18Z"></path>
+              <path d="M24.47,15.19c0-5.44,3.59-8.78,8.27-8.78,5.15,0,8.56,4,7.94,10.43H30a3.68,3.68,0,0,0,4.08,3.65,8.13,8.13,0,0,0,4.16-1.32L40,22.55a13.9,13.9,0,0,1-6.67,1.56C27.72,24.11,24.47,20.61,24.47,15.19Zm11.24-1.7c0-1.94-1-3.45-2.84-3.45S30,11.64,30,13.48Z"></path>
+              <path d="M66.8,24.11A15.62,15.62,0,0,1,60,22.73l1.63-3.62a9.23,9.23,0,0,0,4.54,1.32c1.93,0,2.71-.7,2.71-1.42s-.57-1.1-2.26-1.63c-3.66-1.15-5.74-2.67-5.74-5.63,0-2.71,2.21-5.34,6.69-5.34a14.78,14.78,0,0,1,6.74,1.45l-1.53,3.5a8.3,8.3,0,0,0-4.21-1.27c-1.49,0-2.13.61-2.13,1.36,0,1,.86,1.3,2.65,1.85,4.56,1.39,5.62,3.28,5.62,5.42,0,2.79-2.4,5.4-7.88,5.4"></path>
+              <path d="M17.86,21.22c-.31.35-2,2.76-6.42,2.91C5,24.37,0,19.49,0,11.9S5.43-.25,11.94,0a12.11,12.11,0,0,1,9.42,4.86L16.93,7.69c-.41-.64-2-3.21-5.13-3.21-3.44,0-5.74,3-5.74,7.63,0,4.15,1.91,7.94,5.74,7.94s5.3-3.5,5.33-5.49H12V10.82H22.37V23.59H18.18l-.28-2.36Z"></path>
+            </g>
+          </svg>
+        </a>
+      <div class="gnb">
+        <div class="menu">
+          <a href="#Home" class="link-gnb">Home</a>
+          <a href="#Service" class="link-gnb">Service</a>
+          <a href="#Project" class="link-gnb">Project</a>
+          <a href="#Sustainability" class="link-gnb">Sustainability</a>
+          <a href="#News" class="link-gnb">News</a>
+          <a href="#About" class="link-gnb">About</a>
+          <a href="#Contact" class="link-gnb">Contact</a>
+        </div>
+        <div class="slogan">Creating a Better World Through the Power of Design.</div>
+      </div>
+      <div class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+	<div class="container">
+		<section class="cd-section visible" id="Home">
+      <h2 class="sc-title"><span class="blind">home</span></h2>
+			<div class="inner">
+				<div class="content">
+					<div class="home-inner">
+            <div class="opacity-image"></div>
+            <div class="title">
+              <span>How&nbspUrban&nbspMobility</span>
+              <span>Is&nbspTransforming</span>
+              <span>Global&nbspCities</span>
+            </div>
+          </div>
+				</div>
+			</div>
+		</section>
+		<section class="cd-section" id="Service">
+      <h2 class="sc-title"><span class="blind">service</span></h2>
+			<div class="inner">
+				<div class="content">
+					<div class="service-inner">
+            <div class="service-items">
+              <div class="item">
+                <img src="./images/city.png" alt="Architecture">
+                <span class="text-area">
+                  <h3 class="item-title">Architecture</h3>
+                  <p class="item-desc">Successful buildings capture the spirit of their surroundings, even as they assert their own identity. They’re visually appealing, healthy, comfortable, flexible, secure and efficient, a pleasure to be in. And they pay their way, adding real value for their owners and users.</p>
+                </span>
+              </div>
+              <div class="item">
+                <img src="./images/careers-main-02.png" alt="Brand Design">
+                <span class="text-area">
+                  <h3 class="item-title">Brand Design</h3>
+                  <p class="item-desc">Our brand designers, strategists, and programmers help transform a brand’s business, culture, and experience through the built environment by developing branded communications, spaces, and experiences that define, inspire, and engage consumers.</p>
+                </span>
+              </div>
+              <div class="item">
+                <img src="./images/home.png" alt="Cities & Urban Design">
+                <span class="text-area">
+                  <h3 class="item-title">Cities & Urban Design</h3>
+                  <p class="item-desc">We believe that thoughtful design connects nature, technology, and people while planning for resilience in a changing world. The places we create are rooted in local culture and act as a catalyst for socially sustainable urban transformation.</p>
+                </span>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+		</section>
+		<section class="cd-section" id="Project">
+      <h2 class="sc-title"><span class="blind">project</span></h2>
+			<div class="inner">
+				<div class="content">
+					<div class="project-inner">
+            <input type="radio" name="tabmenu" id="tab1" checked>
+            <input type="radio" name="tabmenu" id="tab2">
+            <input type="radio" name="tabmenu" id="tab3">
+            <div class="tabs">
+              <div class="tab">
+                <div class="project-info" data-text="01">
+                  <h3 class="title">Project : 545wyn</h3>
+                  <p class="desc">As the first Class A office building in Miami’s burgeoning Wynwood neighborhood, 545wyn engages and extends the energy of the community while attracting tenants that fit best with the district and the property.</p>
+                  <ul class="project-list">
+                    <li class="project-item"><b>Region</b> : Miami, Florida</li>
+                    <li class="project-item"><b>Completed Date</b> : January 2021</li>
+                    <li class="project-item"><b>Architectural use</b> : office building</li>
+                  </ul class="project-list">
+                  <div class="detail-box">
+                    <div class="detail">
+                      <span>225</span>WORKING DAY
+                    </div>
+                    <div class="detail">
+                      <span>320</span>MEMBERS
+                    </div>
+                    <div class="detail">
+                      <span>3M</span>BUDGET
+                    </div>
+                  </div>
+                  <a href="project-detail01.html" data-featherlight="iframe" class="link-more">
+                    view project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title/><g data-name="Layer 2" id="Layer_2"><path d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"/></g></svg>
+                  </a>
+                </div>
+                <div class="project-photo">
+                  <img src="./images/project-main-01-01.jpg" alt="">
+                  <img src="./images/project-main-01-02.jpg" alt="">
+                  <img src="./images/project-main-01-03.jpg" alt="">
+                </div>
+              </div>
+              <div class="tab">
+                <div class="project-info" data-text="02">
+                  <h3 class="title">Project : Burlingame Point</h3>
+                  <p class="desc">Burlingame Point is one of the largest office development projects in the history of the San Francisco Peninsula with international developer Kylli acquiring the site for their first foray into the local market.</p>
+                  <ul class="project-list">
+                    <li class="project-item"><b>Region</b> : Burlingame, California</li>
+                    <li class="project-item"><b>Completed Date</b> : April 2016</li>
+                    <li class="project-item"><b>Architectural use</b> : office building</li>
+                  </ul class="project-list">
+                  <div class="detail-box">
+                    <div class="detail">
+                      <span>321</span>WORKING DAY
+                    </div>
+                    <div class="detail">
+                      <span>420</span>MEMBERS
+                    </div>
+                    <div class="detail">
+                      <span>8M</span>BUDGET
+                    </div>
+                  </div>
+                  <a href="project-detail02.html" data-featherlight="iframe" class="link-more">
+                    view project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title/><g data-name="Layer 2" id="Layer_2"><path d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"/></g></svg>
+                  </a>
+                </div>
+                <div class="project-photo">
+                  <img src="./images/project-main-02-01.jpg" alt="">
+                  <img src="./images/project-main-02-02.jpg" alt="">
+                  <img src="./images/project-main-02-03.jpg" alt="">
+                </div>
+              </div>
+              <div class="tab">
+                <div class="project-info" data-text="03">
+                  <h3 class="title">Project : Shanghai Tower</h3>
+                  <p class="desc">Sited adjacent to the neighboring Jin Mao Tower and Shanghai World Financial Center in the heart of the Lujiazui Finance and Trade Zone, the 632-meter Shanghai Tower, designed by Gensler, ranks as China’s tallest building.</p>
+                  <ul class="project-list">
+                    <li class="project-item"><b>Region</b> : Shanghai, China</li>
+                    <li class="project-item"><b>Completed Date</b> : June 2016</li>
+                    <li class="project-item"><b>Architectural use</b> : cultural amenity spaces</li>
+                  </ul class="project-list">
+                  <div class="detail-box">
+                    <div class="detail">
+                      <span>132</span>WORKING DAY
+                    </div>
+                    <div class="detail">
+                      <span>202</span>MEMBERS
+                    </div>
+                    <div class="detail">
+                      <span>5M</span>BUDGET
+                    </div>
+                  </div>
+                  <a href="project-detail03.html" data-featherlight="iframe"class="link-more">
+                    view project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title/><g data-name="Layer 2" id="Layer_2"><path d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"/></g></svg>
+                  </a>
+                </div>
+                <div class="project-photo">
+                  <img src="./images/project-main-03-01.jpg" alt="">
+                  <img src="./images/project-main-03-02.jpg" alt="">
+                  <img src="./images/project-main-03-03.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+                <label for="tab1"></label>
+                <label for="tab2"></label>
+                <label for="tab3"></label>
+            </div>
+        </div>
+				</div>
+			</div>
+		</section>
+		<section class="cd-section" id="Sustainability">
+      <h2 class="sc-title"><span class="blind">sustain</span></h2>
+			<div class="inner">
+				<div class="content">
+					<div class="sustain-inner">
+            <div class="sustain-feature">
+              <div class="sustain-info">
+                <div class="text-box">
+                  <h2 class="title">Climate Action<br/>& Sustainability</h2>
+                  <p class="desc">We offer sustainability consulting services and climate action strategies for developers, building owners, and tenants. Focusing on certification, strategy, and analytics, we help organizations and communities achieve carbon targets and sustainability goals.</p>
+                </div>
+                <div class="img-box">
+                  <img src="./images/plan-main-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="history-info">
+                <h2 class="title">History</h2>
+                <div class="history-slider">
+                  <div class="slider-item">
+                    <h4 class="title">Under Armour Global Headquarters</h4>
+                    <p class="desc">Under Armour’s new global headquarters building in Baltimore’s Port Covington reaffirms the company’s long-term resilience commitment.</p>
+                  </div>
+                  <div class="slider-item">
+                    <h4 class="title">Santa Monica College Core Performance Center</h4>
+                    <p class="desc">This new building at the heart of the Santa Monica College campus serves as a focal point for the physical activities of the student population.</p>
+                  </div>
+                  <div class="slider-item">
+                    <h4 class="title">Springdale<br/>Green</h4>
+                    <p class="desc">Nestled among a restored preserve, the project reverses years of ecological damage by transforming the industrial site into a verdant oasis.</p>
+                  </div>
+                  <div class="slider-item">
+                    <h4 class="title">LinkedIn<br/>Omaha</h4>
+                    <p class="desc">This project is the second of LinkedIn’s buildings to include onsite solar photovoltaics to support a more resilient future. </p>
+                  </div>
+                  <div class="slider-item">
+                    <h4 class="title">San Francisco<br/>International Airport</h4>
+                    <p class="desc">San Francisco International Airport (SFO) has set the goal of becoming the first airport in the world to achieve zero carbon, zero waste, and zero net energy.</p>
+                  </div>
+                  <div class="slider-item">
+                    <h4 class="title">Project of<br/>The Link</h4>
+                    <p class="desc">By transforming an underutilized former telecom building into a modern, amenity-rich mixed-use office tower, The Link demonstrates the potential of thoughtful adaptive reuse.</p>
+                  </div>
+                  <div class="slider-item">
+                    <h4 class="title">Torre<br/>Universal Sustainability</h4>
+                    <p class="desc">Torre Universal, a modern, class A+ corporate office and retail center in San José, strives to be a benchmark of sustainable development, multimodal mobility, and vertical urbanism.</p>
+                  </div>
+                  <div class="slider-item">
+                    <h4 class="title">Café Britt<br/>Headquarters</h4>
+                    <p class="desc">Optimizing the building's form and orientation improves energy performance, allowing on-site photovoltaics to generate 103% of needed energy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+		</section>
+		<section class="cd-section" id="News">
+      <h2 class="sc-title"><span class="blind">news</span></h2>
+			<div class="inner">
+				<div class="content">
+					<div class="news-inner">
+            <div class="news-left-area">
+              <div class="left-box">
+                <h2 class="news-title">
+                  Government<br/>Approval for<br/>Elysium City Project
+                </h2>
+                <p class="news-decs">
+                  After a rigorous administrative procedural process, the Elysium City project received final authorization from the Government Council to move forward with its operation and development. Given its complex environmental and economic scope, this achievement is a unique and historic milestone for both Spain and Europe.
+                </p>
+                <a href="" class="news-link" target="_blank">View the News</a>
+              </div>
+            </div>
+            <div class="news-right-area">
+              <img src="./images/news.jpg" alt="어워드 이미지">
+            </div>
+          </div>
+				</div>
+			</div>
+		</section>
+		<section class="cd-section" id="About">
+      <h2 class="sc-title"><span class="blind">about</span></h2>
+			<div class="inner">
+				<div class="content">
+					<div class="about-inner">
+            <div class="feature">
+              <div class="office">
+                <div class="research">
+                  <em>We Use Design to Create a Better World</em>
+                  <h2 class="title">Gensler Research</h2>
+                  <p class="desc">Gensler is a global architecture, design, and planning firm with 53 locations and more than 7,000 professionals networked across the Americas, Europe, Greater China, Asia Pacific, and the Middle East.</p>
+                  <span class="office-info">300M : By 2030, Gensler will have saved 300m metric tons of CO2.</span>
+                </div>
+                <div class="people">
+                  <em>The Source of Our Strength Is Our People</em>
+                  <h2 class="title">Our People</h2>
+                  <p class="desc">By leveraging our diversity of ideas, our research and innovation, our shared values, and our One-Firm Firm culture, we are moving forward together into a new era defined by design. </p>
+                  <span class="office-info">700k : More than 700,000 employees have informed millions of key data points captured by the Gensler Research Institute.</span>
+                </div>
+              </div>
+              <div class="report">
+                <div class="report-item">
+                  <i class="fa fa-leaf"></i>
+                  <h3 class="title">Beyond Senior Living: Designing Communities for Inclusion</h3>
+                  <p class="desc">It’s time to design residential developments that fit into wider communities and embrace change.</p>
+                </div>
+                <div class="report-item">
+                  <i class="fa fa-bullseye"></i>
+                  <h3 class="title">Utilizing Waste Heat From Data Centers</h3>
+                  <p class="desc">The global shift to working from home has dramatically accelerated the construction of new data centers around the world.</p>
+                </div>
+                <div class="report-item">
+                  <i class="fa fa-cube"></i>
+                  <h3 class="title">Middle East Workplace Survey 2023</h3>
+                  <p class="desc">Gensler’s latest Middle East Workplace Survey reveals that diversity of workspaces are a core component of the most innovative workplaces.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+		</section>
+		<section class="cd-section" id="Contact">
+      <h2 class="sc-title"><span class="blind">contact</span></h2>
+			<div class="inner">
+				<div class="contact">
+          <div class="contact-inner">
+            <div class="contact-feature">
+              <div class="contact-form">
+                <h3 class="title"><b>Contact</b> Us</h3>
+                <p class="desc">Feel free to ask for details, don’t save any questions.</p>
+                <form action="" class="send-box">
+                  <label for="">Email<span>*</span></label>
+                  <input type="email">
+                  <label for="">Subject<span>*</span></label>
+                  <input type="text">
+                  <label for="">Message<span>*</span></label>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <button>send message</button>
+                </form>
+              </div>
+              <div class="contact-info">
+                <h4 class="title">Our <b>Office</b></h4>
+                <ul>
+                  <li>Address : 45 Fremont St. Suite 1500 San Francisco, CA 94105 USA</li>
+                  <li>Phone : +1 415.433.3700</li>
+                  <li>Email : product_librarians@gensler.com</li>
+                </ul>
+                <h4 class="title">Business <b>Hours</b></h4>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i>Monday - Friday : 9am to 5pm</li>
+                  <li><i class="fa fa-clock-o"></i>Saturday : 9am to 2pm</li>
+                  <li><i class="fa fa-clock-o"></i>Sunday : Closed</li>
+                </ul>
+                <h4 class="title">Get in <b>Touch</b></h4>
+                <p class="desc">Visit Offices for address and contacts of the location nearest you. See People for a directory of Gensler’s leadership network.</p>
+              </div>
+            </div> 
+          </div>
+				</div>
+			</div>
+		</section>
+	</div>
+  <a href="#" class="gototop"> <img src="./images/gototop.png" alt="맨위로 버튼"> </a>
+  <a href="hiring.html" data-featherlight="iframe" class="btn-hiring">
+    <i class="fa fa-comment"></i>
+    Hiring
+  </a>
+  <!-- page scroll effects nav -->
+	<nav>
+		<ul class="cd-vertical-nav">
+			<li><a href="#0" class="cd-prev inactive">Next</a></li>
+			<li><a href="#0" class="cd-next">Prev</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

@@ -1,0 +1,398 @@
+@media (max-width : 768px) {
+  /* html{
+    scroll-behavior: smooth;
+  } */
+  .cd-section{
+      height: auto;
+  }
+  .cd-section > div{
+      height: auto;
+  }
+  .content{
+      position: static;
+      width: 100%;
+      height: 100%;
+  }
+  .content > img {
+    width: auto;
+  }
+
+  /* header */
+  header{
+    transition: 0.5s;
+    background: transparent;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    z-index: 1;
+  }
+  header.active{
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .logo{ 
+    vertical-align: -2px;
+  }
+  .menu{
+    display: block;
+  }
+  .slogan{
+    display: none;
+  }
+  .gnb{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5) ;
+    transition: 0.5s;
+  }
+  .gnb.active{
+    right: 0;
+  }
+  .menu{
+    line-height: 40px;
+    margin-top: 60px;
+  }
+  .link-gnb{
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+    color: #000;
+    font-size: 20px;
+  }
+
+  /* trigger (sidemenu-close css) */
+  .trigger{
+    display: block;
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+  }
+  .trigger > span{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #000;
+    transition: 0.5s;
+  }
+  .trigger > span:nth-child(1){
+    top: 0;
+  }
+  .trigger > span:nth-child(2){
+    top: 50%;
+    width: 80%;
+  }
+  .trigger > span:nth-child(3){
+    top: 100%;
+  }
+  .trigger.active > span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active > span:nth-child(2){
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+  .trigger.active > span:nth-child(3){
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  /* gototop */
+  .gototop{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5;
+    border: 1px solid #cccbcb;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .gototop.active{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .gototop img{
+    filter: invert(0.1);
+  }
+
+  /* hiring */
+  .btn-hiring{
+    right: 20px;
+    bottom: 20px;
+  }
+  .cd-vertical-nav{
+    display: none;
+  }
+
+/********************* mobile ********************/  
+/********************* home **********************/
+.home-inner{
+  height: 100vh;
+}
+.welcome-text{
+  transform: translate(-50%, -50%) scale(0.7);
+  width: 100%;
+}
+.home-inner .title{
+  left: 30px;
+}
+.home-inner .title span{
+  font-size: 33px;
+}
+
+/********************* service **********************/
+.service-inner{
+  height: auto;
+  background: #ee312450;
+}
+.service-items{
+  width: 100%;
+  position: static;
+  left: 0;
+  transform: none;
+  text-align: center;
+  padding: 70px 20px 20px;
+}
+.item img{
+  float: none;
+}
+
+/********************* project **********************/
+.project-inner{
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  border: none;
+}
+.tab > div{
+  float: none;
+  width: 100%;
+  height: auto;
+}
+.project-info .detail+.detail{
+  margin-left: 50px;
+}
+.project-info{
+  padding: 0 20px 30px;
+}
+.project-info .desc{
+  margin: 20px 0;
+}
+.project-info ul{
+  margin-bottom: 20px;
+}
+.tab .link-more{
+  display: block;
+}
+.project-inner .btn{
+  width: 100%;
+  bottom: 13px;
+}
+.project-photo .slick-track{
+  height: 350px;
+}
+.project-photo .slick-track img{
+  object-fit: cover;
+}
+
+
+/********************* sustain **********************/
+.sustain-inner{
+  height: auto;
+  padding: 70px 20px 20px;
+}
+.sustain-feature{
+  width: 100%;
+  position: static;
+  transform: none;
+}
+.sustain-feature > div{
+  height: auto;
+}
+.sustain-info > div{
+  float: none;
+}
+.sustain-info .text-box{
+  width: 100%;
+  padding-right: 0;
+}
+.sustain-info .img-box{
+  width: 100%;
+  padding-top: 10px;
+}
+.sustain-info .img-box img{
+  height: auto;
+}
+.slick-dotted.slick-slider{
+  margin-bottom: 0;
+}
+.history-info .slick-dots{
+  position: static;
+  padding-bottom: 30px;
+}
+
+/********************* news **********************/
+.news-inner{
+  height: auto;
+}
+.news-inner > div{
+  float: none;
+  width: 100%;
+}
+.left-box,
+.news-right-area > img
+{
+  position: static;
+  transform: none;
+  width: 100%;
+  vertical-align: top;
+}
+.left-box{
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+/********************* about **********************/
+.about-inner{
+  height: auto;
+}
+.feature{
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  padding-top: 70px;
+}
+.feature > div{
+  float: none;
+  width: 100%;
+  padding: 20px;
+}
+
+/********************* contact **********************/
+.contact-inner{
+  height: auto;
+  padding: 70px 20px 50px;
+}
+.contact-feature{
+  width: 100%;
+  position: static;
+  transform: none;
+}
+.contact-feature > div{
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+.contact-info{
+  margin-top: 20px;
+}
+
+/********************* sub-page hiring **********************/
+.modal > article{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header-inner{
+  width: 90%;
+}
+.hiring-main{
+  height: 350px;
+}
+.hiring-heading{
+  top: 56%;
+}
+.hiring-heading .title{
+  font-size: 22px;
+  margin-top: 25px;
+  width: 100%;
+}
+.hiring-info > div{
+  float: none;
+  width: 100%;
+  height: auto;
+}
+.hiring-info .text{
+  width: 100%;
+}
+.hiring-info .text{
+  position: static;
+  transform: none;
+}
+.hiring-slogan{
+  padding: 70px 0;
+}
+.hiring-slogan .desc{
+  font-size: 18px;
+}
+.hiring-slogan .desc::before{
+  font-size: 150px;
+  top: -60px;
+  left: -65px;
+}
+.hiring-info .title{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.hiring-contact .info-list{
+  display: block;
+  width: 100%;
+
+}
+
+/* featherlight Customs CSS */
+.featherlight .featherlight-close-icon{
+  top: 22px;
+  right: 22px;
+}
+.featherlight .featherlight-content{
+  padding: 0;
+}
+
+/********************* sub-page project **********************/
+
+.hiring-main.project-main{
+  height: 60vh;
+}
+.hiring-main.project-main .title{
+  font-size: 40px;
+}
+.project-info{
+  padding-top: 14px;
+}
+.photo-area.project-info ul {
+  margin-top: 20px;
+}
+.modal.project-detail .hiring-info:nth-child(3){
+  margin-top: 20px;
+}
+.modal.project-detail .hiring-info:nth-child(5){
+  margin-bottom: 20px;
+}
+
+
+
+}
