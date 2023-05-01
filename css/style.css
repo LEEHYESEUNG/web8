@@ -259,33 +259,33 @@ header{
     transform: translateY(-50%);
     left: 100px;
 }
-.item{
+.service-inner .item{
     overflow: hidden;
 }
-.item:hover img{
+.service-inner .item:hover img{
     filter: invert(0);
 }
-.item:hover .item-title{
+.service-inner .item:hover .item-title{
     color: #000;
 }
-.item+.item{
+.service-inner .item+.item{
     margin-top: 30px;
 }
-.item img{
+.service-inner .item img{
     height: 100px;
     float: left;
     margin-right: 20px;
     filter: invert(1);
     transition: 0.5s;
 }
-.item-title{
+.service-inner .item-title{
     font-size: 22px;
-    font-weight: 500;
+    font-weight: bold;
     margin: 0;
     transition: 0.5s;
     letter-spacing: -1px;
 }
-.item-desc{
+.service-inner .item-desc{
     overflow: hidden;
     font-size: 15px;
 }
