@@ -141,9 +141,7 @@ header{
 .logo{
     float: left;
     display: block; 
-}
-.logo svg{
-    vertical-align: -5px;
+    margin: 0;
 }
 .gnb{
     float: right;
